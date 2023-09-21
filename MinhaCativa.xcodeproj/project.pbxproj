@@ -11,6 +11,7 @@
 		16CF29FC2ABC720400536F99 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF29FB2ABC720400536F99 /* ContentView.swift */; };
 		16CF29FE2ABC720600536F99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16CF29FD2ABC720600536F99 /* Assets.xcassets */; };
 		16CF2A012ABC720600536F99 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16CF2A002ABC720600536F99 /* Preview Assets.xcassets */; };
+		16CF2A082ABCCB9F00536F99 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF2A072ABCCB9F00536F99 /* Ticket.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		16CF29FB2ABC720400536F99 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		16CF29FD2ABC720600536F99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16CF2A002ABC720600536F99 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		16CF2A072ABCCB9F00536F99 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				16CF29F92ABC720400536F99 /* MinhaCativaApp.swift */,
 				16CF29FB2ABC720400536F99 /* ContentView.swift */,
+				16CF2A072ABCCB9F00536F99 /* Ticket.swift */,
 				16CF29FD2ABC720600536F99 /* Assets.xcassets */,
 				16CF29FF2ABC720600536F99 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16CF29FC2ABC720400536F99 /* ContentView.swift in Sources */,
+				16CF2A082ABCCB9F00536F99 /* Ticket.swift in Sources */,
 				16CF29FA2ABC720400536F99 /* MinhaCativaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +274,7 @@
 				DEVELOPMENT_TEAM = F4J68BQ5VP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +304,7 @@
 				DEVELOPMENT_TEAM = F4J68BQ5VP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -10,9 +10,9 @@ import SwiftUI
 struct ContentView: View {
     @State private var name = ""
     @State private var phone = ""
-    @State private var price = 0
+    @State private var price = ""
     @State private var tickets = [Ticket]()
-    @State private var sector: Ticket.Sector = .inferior
+    @State private var sector: Ticket.Sector = .Oeste_Inferior
     @State private var showingReport = false
     
     var body: some View {
@@ -25,9 +25,7 @@ struct ContentView: View {
                         Text(sector.rawValue)
                     }
                 }
-                Stepper(value: $price, in: 0...1000) {
-                    Text("Preço: \(price)")
-                }
+                TextField("Preço", text: $price)
                 Button("Adicionar Ingresso") {
                     addTicket()
                 }
@@ -45,29 +43,15 @@ struct ContentView: View {
         }
     }
     func addTicket() {
-        let ticket = Ticket(name: name, phone: phone, sector: sector, price: price)
-        tickets.append(ticket)
-        name = ""
-        phone = ""
-        price = 0
-        sector = .inferior
-    }
-    
-}
+         let ticket = Ticket(name: name, phone: phone, sector: sector, price: price)
+         tickets.append(ticket)
+         name = ""
+         phone = ""
+         price = ""
+        sector = .Oeste_Inferior
+     }
+ }
 
-struct Ticket: Identifiable {
-    var id = UUID()
-    var name: String
-    var phone: String
-    var sector: Ticket.Sector
-    var price: Int
-    
-    enum Sector: String, CaseIterable {
-        case superior
-        case inferior
-        case camarote
-    }
-}
 
 struct ReportView: View {
     var tickets: [Ticket]
@@ -83,7 +67,6 @@ struct ReportView: View {
                     Text("Preço: \(ticket.price)")
                 }
             }
-          //  .navigationTitle("Relatório")
         }
     }
 }
